@@ -10,3 +10,6 @@ node_modules/
 *.swp
 .idea/
 .vscode/
+
+# 原始素材（裁剪前的照片等），不发布
+_src/

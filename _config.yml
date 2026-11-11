@@ -18,7 +18,7 @@ url: https://wy-lan.github.io
 baseurl: ""                     # 仓库名为 <你的用户名>.github.io 时留空；否则填 "/仓库名"
 
 # ---------- 联系方式 ----------
-email: yourname@bupt.edu.cn     # TODO 改成真实邮箱
+email: wuyang.lan@bupt.edu.cn
 github_username: WY-Lan
 google_scholar: ""              # https://scholar.google.com/citations?user=XXXXXXX
 orcid: ""                       # 0000-0000-0000-0000
@@ -26,7 +26,7 @@ twitter: ""                     # 只填 handle，不含 @
 cv: ""                          # 例如 /assets/files/cv.pdf
 
 # ---------- 头像 ----------
-avatar: ""                      # 例如 /assets/img/avatar.jpg；留空则显示姓名首字母
+avatar: "/assets/img/avatar.jpg"   # 留空则显示姓名首字母
 
 # ---------- 隐私 ----------
 # true  → 输出 noindex，告诉搜索引擎不要收录本页
