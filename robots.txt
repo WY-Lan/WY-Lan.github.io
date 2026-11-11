@@ -1,0 +1,14 @@
+---
+layout: null
+permalink: /robots.txt
+---
+{% if site.noindex %}
+# 私有模式：禁止一切爬虫收录
+User-agent: *
+Disallow: /
+{% else %}
+User-agent: *
+Allow: /
+
+Sitemap: {{ site.url }}/sitemap.xml
+{% endif %}

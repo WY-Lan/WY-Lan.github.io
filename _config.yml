@@ -28,6 +28,12 @@ cv: ""                          # 例如 /assets/files/cv.pdf
 # ---------- 头像 ----------
 avatar: ""                      # 例如 /assets/img/avatar.jpg；留空则显示姓名首字母
 
+# ---------- 隐私 ----------
+# true  → 输出 noindex，告诉搜索引擎不要收录本页
+#         注意：这只防搜索引擎，不能阻止知道网址的人直接访问。
+#         真正的访问控制见 README「私有化」一节。
+noindex: true
+
 # ---------- 构建 ----------
 lang: en
 timezone: Asia/Shanghai

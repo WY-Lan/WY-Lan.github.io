@@ -9,3 +9,6 @@
 <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ '/feed.xml' | relative_url }}">
 <meta name="color-scheme" content="light">
 <meta name="theme-color" content="#fbfaf8">
+{% if site.noindex %}
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+{% endif %}
