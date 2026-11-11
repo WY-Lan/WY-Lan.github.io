@@ -58,16 +58,17 @@
   abstract: "Combines cross-domain pretrained sequence models with structural information to predict protein–RNA binding affinity."
   links: []          # TODO 补论文页 / 代码
 
-# ---------------- Compact list ----------------
-
 - title: "BioLabAgents: A Multi-Agent Framework for Scientific Idea Generation and Evaluation on Biomedical Research Trajectories"
   authors: ["Y Li", "Wuyang Lan", "C Ji", "K Ao", "K Xue", "W Wang", "Y Wu", "X Liu", "Guangyu Wang†"]
   venue: "BIBM"
   venue_type: conference
   year: 2025
   date: "2025-12-15"  # BIBM 2025（会议 12/15–12/18）
-  featured: false
-  links: []
+  featured: true
+  abstract: "A multi-agent framework in which LLM agents propose and evaluate biomedical research ideas along structured research trajectories, rather than generating them in a single pass."
+  links: []          # TODO 补论文页 / 代码
+
+# ---------------- Compact list ----------------
 
 - title: "Elite GA-Based Feature Selection of LSTM for Earthquake Prediction"
   authors: ["Z Ye", "Wuyang Lan", "W Zhou", "Q He", "L Hong", "X Yu", "Y Gao"]
