@@ -1,0 +1,14 @@
+# 最新的一条放在最上面。
+# 支持 Markdown 语法：**加粗**、[链接文字](https://example.com)
+#
+# ⚠️ 下面只有第一条是真实的。其余是格式示例，请替换成你自己的消息，
+#    或者整条删掉——空列表不会让页面出错，只会让 News 区块显示一行提示。
+
+- date: "2026.11"
+  text: "Personal site is live. I'll be writing here about research, methods, and the parts that don't fit in a paper."
+
+# - date: "2026.09"
+#   text: "One paper accepted at **Venue 2027**."
+#
+# - date: "2026.06"
+#   text: "Gave an invited talk at [Some Workshop](https://example.com)."

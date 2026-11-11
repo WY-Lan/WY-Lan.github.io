@@ -1,0 +1,88 @@
+# ============================================================
+#  论文列表 —— 兰武洋 / Wuyang Lan
+#
+#  ⚠️ 注意事项
+#  1. 作者名统一写成 "Wuyang Lan"（与 _config.yml 的 author_name 完全一致），
+#     页面会自动给你加粗。原始引用里的 "W Lan" 缩写请展开。
+#  2. 作者名后加 * = 共同一作，加 † = 通讯作者。
+#  3. abstract 是我根据标题写的初稿（我没有读过论文内容），
+#     请务必改成你自己的表述，或者直接删掉这一行。
+#  4. links 里只放了能确认的地址；其余留空，你自己补 DOI / PDF / 代码。
+#  5. featured: true → 首页大卡片；false → 下方紧凑列表。
+# ============================================================
+
+# ---------------- Featured ----------------
+
+- title: "ClinicalGPT-R1: Pushing Reasoning Capability of Generalist Disease Diagnosis with Large Language Model"
+  authors: ["Wuyang Lan", "W Wang", "C Ji", "G Yang", "Y Zhang", "X Liu", "S Wu", "Guangyu Wang†"]
+  venue: "arXiv"
+  venue_type: preprint
+  year: 2025
+  featured: true
+  abstract: "A large language model for generalist disease diagnosis, aimed at strengthening the model's diagnostic reasoning rather than relying on prompting alone."
+  links:
+    - name: arXiv
+      url: "https://arxiv.org/abs/2504.09421"
+
+- title: "A Unified Framework and Benchmark for Generalizable Biomedical Knowledge Extraction and Applications with Large Language Models"
+  authors: ["Wuyang Lan", "S Zhang", "W Wang", "K Hu", "T Gao", "L Shi", "Z Han", "Y Chen", "H Zhang", "et al."]
+  venue: "Cell Reports Medicine"
+  venue_type: journal
+  year: 2026
+  featured: true
+  abstract: "A unified framework and evaluation benchmark for extracting structured biomedical knowledge with large language models, built to test generalization beyond the training distribution."
+  links: []          # TODO 补 DOI
+
+- title: "Generalizable Mutation-Effect Prediction Across Adaptive Immune Recognition via Unified Multimodal Framework"
+  authors: ["R Han", "Y Zhang", "X Liu", "L Fu", "T Pan", "J Xu", "X Wang", "P Zhang", "X Chen", "J Lei", "Wuyang Lan", "et al."]
+  venue: "Nature Machine Intelligence"
+  venue_type: journal
+  year: 2026
+  featured: true
+  abstract: "A unified multimodal framework for predicting mutation effects in adaptive immune recognition, with a focus on generalization across settings."
+  links: []          # TODO 补 DOI
+
+- title: "Copra: Bridging Cross-Domain Pretrained Sequence Models with Complex Structures for Protein-RNA Binding Affinity Prediction"
+  authors: ["R Han", "X Liu", "T Pan", "J Xu", "X Wang", "Wuyang Lan", "Z Li", "Z Wang", "J Song", "Guangyu Wang", "et al."]
+  venue: "AAAI"
+  venue_type: conference
+  year: 2025
+  featured: true
+  abstract: "Combines cross-domain pretrained sequence models with structural information to predict protein–RNA binding affinity."
+  links: []          # TODO 补论文页 / 代码
+
+# ---------------- Compact list ----------------
+
+- title: "BioLabAgents: A Multi-Agent Framework for Scientific Idea Generation and Evaluation on Biomedical Research Trajectories"
+  authors: ["Y Li", "Wuyang Lan", "C Ji", "K Ao", "K Xue", "W Wang", "Y Wu", "X Liu", "Guangyu Wang†"]
+  venue: "BIBM"
+  venue_type: conference
+  year: 2025
+  featured: false
+  links: []
+
+- title: "Elite GA-Based Feature Selection of LSTM for Earthquake Prediction"
+  authors: ["Z Ye", "Wuyang Lan", "W Zhou", "Q He", "L Hong", "X Yu", "Y Gao"]
+  venue: "J. Supercomputing"
+  venue_type: journal
+  year: 2024
+  featured: false
+  links: []
+
+- title: "Adaptive Dendritic Cell-Negative Selection Method for Earthquake Prediction"
+  authors: ["W Zhou", "Wuyang Lan", "Z Ye", "Z Ming", "J Chen", "Q He"]
+  venue: "Electronics"
+  venue_type: journal
+  year: 2022
+  featured: false
+  links: []
+
+- title: "DBP2Vec: Predicting DNA-Binding Proteins Directly Using Pre-Trained Protein Language Model"
+  authors: ["C Wei", "Z Ye", "P Wang", "Wuyang Lan"]
+  venue: "bioRxiv"
+  venue_type: preprint
+  year: 2022
+  featured: false
+  links:
+    - name: bioRxiv
+      url: "https://www.biorxiv.org/content/10.1101/2022.07.30.502114"

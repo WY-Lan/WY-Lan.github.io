@@ -1,0 +1,34 @@
+---
+layout: default
+---
+
+<article class="wrap post">
+  <header class="post-header">
+    <div class="post-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+      {% if page.tags.size > 0 %}
+      <span class="post-tags">{% for t in page.tags %}<span class="tag">{{ t }}</span>{% endfor %}</span>
+      {% endif %}
+    </div>
+    <h1 class="post-title">{{ page.title }}</h1>
+    {% if page.description %}<p class="post-subtitle">{{ page.description }}</p>{% endif %}
+  </header>
+
+  <div class="post-body">
+    {{ content }}
+  </div>
+
+  <footer class="post-footer">
+    <a href="{{ '/writing/' | relative_url }}" class="back-link">← All writing</a>
+    {% if page.tags.size > 0 %}
+    <div class="post-footer-tags">{% for t in page.tags %}<span class="tag">{{ t }}</span>{% endfor %}</div>
+    {% endif %}
+  </footer>
+</article>
+
+{% if page.math %}
+<script>
+  window.MathJax = { tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] } };
+</script>
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+{% endif %}

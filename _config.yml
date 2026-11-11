@@ -1,0 +1,60 @@
+# ============================================================
+#  站点主配置
+#  绝大多数日常修改只需要动这个文件 + _data/ 目录
+# ============================================================
+
+title: Wuyang Lan
+author_name: Wuyang Lan        # 必须与 _data/publications.yml 里的写法完全一致（用于自动加粗你的名字）
+name_cn: 兰武洋
+
+tagline: PhD Student in Medical AI
+description: >-
+  Wuyang Lan (兰武洋) — PhD student at Beijing University of Posts and
+  Telecommunications. Medical AI: multimodal clinical data, and models whose
+  reasoning can be checked.
+
+# ---------- 地址 ----------
+url: https://lanwuyang.github.io
+baseurl: ""                     # 仓库名为 <你的用户名>.github.io 时留空；否则填 "/仓库名"
+
+# ---------- 联系方式 ----------
+email: yourname@bupt.edu.cn     # TODO 改成真实邮箱
+github_username: lanwuyang      # TODO 改成真实 GitHub 用户名
+google_scholar: ""              # https://scholar.google.com/citations?user=XXXXXXX
+orcid: ""                       # 0000-0000-0000-0000
+twitter: ""                     # 只填 handle，不含 @
+cv: ""                          # 例如 /assets/files/cv.pdf
+
+# ---------- 头像 ----------
+avatar: ""                      # 例如 /assets/img/avatar.jpg；留空则显示姓名首字母
+
+# ---------- 构建 ----------
+lang: en
+timezone: Asia/Shanghai
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  hard_wrap: false
+
+# 文章永久链接：/writing/<标题>/
+permalink: /writing/:title/
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+
+exclude:
+  - README.md
+  - .gitignore
+  - Gemfile
+  - Gemfile.lock

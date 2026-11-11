@@ -1,0 +1,12 @@
+# Beyond Research —— 表情 + 文字标签
+#
+# ⚠️ 这些是占位内容，请换成你真正喜欢做的事。
+#    这一块的存在感完全来自「具体」：写 "🏔 徒步香山" 比 "🏔 Sports" 好得多，
+#    不做的事就别写，留两三个真的比列八个假的强。
+
+- emoji: "📚"
+  label: Reading
+- emoji: "🏃"
+  label: Running
+- emoji: "☕"
+  label: Pour-over coffee
