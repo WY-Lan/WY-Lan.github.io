@@ -14,12 +14,12 @@ description: >-
   reasoning can be checked.
 
 # ---------- 地址 ----------
-url: https://lanwuyang.github.io
+url: https://wy-lan.github.io
 baseurl: ""                     # 仓库名为 <你的用户名>.github.io 时留空；否则填 "/仓库名"
 
 # ---------- 联系方式 ----------
 email: yourname@bupt.edu.cn     # TODO 改成真实邮箱
-github_username: lanwuyang      # TODO 改成真实 GitHub 用户名
+github_username: WY-Lan
 google_scholar: ""              # https://scholar.google.com/citations?user=XXXXXXX
 orcid: ""                       # 0000-0000-0000-0000
 twitter: ""                     # 只填 handle，不含 @
