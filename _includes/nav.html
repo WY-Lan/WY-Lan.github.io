@@ -8,7 +8,7 @@
 
     <div class="nav-links" id="navLinks">
       <a href="{{ '/' | relative_url }}#about">About</a>
-      <a href="{{ '/' | relative_url }}#news">News</a>
+      {% if site.data.news.size > 0 %}<a href="{{ '/' | relative_url }}#news">News</a>{% endif %}
       <a href="{{ '/' | relative_url }}#research">Research</a>
       <a href="{{ '/writing/' | relative_url }}">Writing</a>
       <a href="{{ '/' | relative_url }}#beyond">Beyond</a>

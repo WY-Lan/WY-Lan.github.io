@@ -9,26 +9,19 @@
 #     请务必改成你自己的表述，或者直接删掉这一行。
 #  4. links 里只放了能确认的地址；其余留空，你自己补 DOI / PDF / 代码。
 #  5. featured: true → 首页大卡片；false → 下方紧凑列表。
+#  6. date 字段格式 "YYYY-MM" 或 "YYYY-MM-DD"，页面按它自动从新到旧排序，
+#     所以新增论文时插在文件哪里都行。year 只用于显示年份徽标。
+#     标了 TODO 的日期是我查不到准确月份的，请补上。
 # ============================================================
 
 # ---------------- Featured ----------------
-
-- title: "ClinicalGPT-R1: Pushing Reasoning Capability of Generalist Disease Diagnosis with Large Language Model"
-  authors: ["Wuyang Lan", "W Wang", "C Ji", "G Yang", "Y Zhang", "X Liu", "S Wu", "Guangyu Wang†"]
-  venue: "arXiv"
-  venue_type: preprint
-  year: 2025
-  featured: true
-  abstract: "A large language model for generalist disease diagnosis, aimed at strengthening the model's diagnostic reasoning rather than relying on prompting alone."
-  links:
-    - name: arXiv
-      url: "https://arxiv.org/abs/2504.09421"
 
 - title: "A Unified Framework and Benchmark for Generalizable Biomedical Knowledge Extraction and Applications with Large Language Models"
   authors: ["Wuyang Lan", "S Zhang", "W Wang", "K Hu", "T Gao", "L Shi", "Z Han", "Y Chen", "H Zhang", "et al."]
   venue: "Cell Reports Medicine"
   venue_type: journal
   year: 2026
+  date: "2026-08"
   featured: true
   abstract: "A unified framework and evaluation benchmark for extracting structured biomedical knowledge with large language models, built to test generalization beyond the training distribution."
   links: []          # TODO 补 DOI
@@ -38,15 +31,29 @@
   venue: "Nature Machine Intelligence"
   venue_type: journal
   year: 2026
+  date: "2026-04"
   featured: true
   abstract: "A unified multimodal framework for predicting mutation effects in adaptive immune recognition, with a focus on generalization across settings."
   links: []          # TODO 补 DOI
+
+- title: "ClinicalGPT-R1: Pushing Reasoning Capability of Generalist Disease Diagnosis with Large Language Model"
+  authors: ["Wuyang Lan", "W Wang", "C Ji", "G Yang", "Y Zhang", "X Liu", "S Wu", "Guangyu Wang†"]
+  venue: "arXiv"
+  venue_type: preprint
+  year: 2025
+  date: "2025-04-13"  # arXiv v1 提交日
+  featured: true
+  abstract: "A large language model for generalist disease diagnosis, aimed at strengthening the model's diagnostic reasoning rather than relying on prompting alone."
+  links:
+    - name: arXiv
+      url: "https://arxiv.org/abs/2504.09421"
 
 - title: "Copra: Bridging Cross-Domain Pretrained Sequence Models with Complex Structures for Protein-RNA Binding Affinity Prediction"
   authors: ["R Han", "X Liu", "T Pan", "J Xu", "X Wang", "Wuyang Lan", "Z Li", "Z Wang", "J Song", "Guangyu Wang", "et al."]
   venue: "AAAI"
   venue_type: conference
   year: 2025
+  date: "2025-02-25"  # AAAI-25 论文集上线日
   featured: true
   abstract: "Combines cross-domain pretrained sequence models with structural information to predict protein–RNA binding affinity."
   links: []          # TODO 补论文页 / 代码
@@ -58,6 +65,7 @@
   venue: "BIBM"
   venue_type: conference
   year: 2025
+  date: "2025-12-15"  # BIBM 2025（会议 12/15–12/18）
   featured: false
   links: []
 
@@ -66,6 +74,7 @@
   venue: "J. Supercomputing"
   venue_type: journal
   year: 2024
+  date: "2024-06-08"  # Online publication date
   featured: false
   links: []
 
@@ -74,6 +83,7 @@
   venue: "Electronics"
   venue_type: journal
   year: 2022
+  date: "2022-12-20"  # 在线发表日（卷期编号为 2023, 12(1)）
   featured: false
   links: []
 
@@ -82,6 +92,7 @@
   venue: "bioRxiv"
   venue_type: preprint
   year: 2022
+  date: "2022-07-30"  # bioRxiv 预印本 v1
   featured: false
   links:
     - name: bioRxiv

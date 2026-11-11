@@ -3,8 +3,9 @@ layout: default
 title: Home
 ---
 
-{% assign featured_pubs = site.data.publications | where: "featured", true %}
-{% assign other_pubs = site.data.publications | where_exp: "p", "p.featured != true" %}
+{% assign pubs_sorted = site.data.publications | sort: "date" | reverse %}
+{% assign featured_pubs = pubs_sorted | where: "featured", true %}
+{% assign other_pubs = pubs_sorted | where_exp: "p", "p.featured != true" %}
 
 <!-- ============ HERO / ABOUT ============ -->
 <section id="about">
@@ -56,6 +57,7 @@ title: Home
 </section>
 
 <!-- ============ NEWS ============ -->
+{% if site.data.news.size > 0 %}
 <section id="news">
   <div class="wrap">
     <div class="section-head">
@@ -73,6 +75,7 @@ title: Home
     </ul>
   </div>
 </section>
+{% endif %}
 
 <!-- ============ RESEARCH ============ -->
 <section id="research">
