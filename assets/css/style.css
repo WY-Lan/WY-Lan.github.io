@@ -23,19 +23,8 @@
   --wrap: 940px;
 }
 
-[data-theme="dark"] {
-  --paper:      #14171a;
-  --panel:      #1b1f23;
-  --ink:        #e9ebed;
-  --ink-soft:   #a7aeb6;
-  --ink-faint:  #6f777f;
-  --line:       #2a3036;
-  --accent:     #7fbca9;
-  --accent-soft:#1d2b27;
-  --amber:      #d9a45c;
-  --amber-soft: #2a2217;
-  --shadow:     0 1px 2px rgba(0, 0, 0, .3), 0 8px 24px -12px rgba(0, 0, 0, .5);
-}
+/* 本主题固定为浅色。若日后想恢复暗色，把 [data-theme="dark"] 的变量块和
+   nav 里的切换按钮加回来即可。 */
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -109,17 +98,6 @@ nav {
   color: var(--ink-soft);
 }
 .nav-links > a:hover { color: var(--accent); text-decoration: none; }
-
-.theme-btn {
-  display: grid; place-items: center;
-  width: 30px; height: 30px;
-  background: none; border: 1px solid var(--line); border-radius: 50%;
-  color: var(--ink-soft); cursor: pointer;
-  transition: color .15s ease, border-color .15s ease;
-}
-.theme-btn:hover { color: var(--accent); border-color: var(--accent); }
-[data-theme="light"] .icon-moon,
-[data-theme="dark"]  .icon-sun { display: none; }
 
 .menu-btn {
   display: none;
@@ -527,7 +505,6 @@ footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0; }
   }
   .nav-links.open { display: flex; }
   .nav-links > a { padding: 12px 0; width: 100%; font-size: .82rem; }
-  .theme-btn { margin-top: 8px; }
 
   .hero { flex-direction: column-reverse; gap: 28px; }
   .hero-photo img, .avatar-fallback { width: 116px; height: 116px; font-size: 2.8rem; }
@@ -557,7 +534,7 @@ footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0; }
 
 /* ---------------- Print ---------------- */
 @media print {
-  nav, footer, .theme-btn, .skip-link { display: none; }
+  nav, footer, .skip-link { display: none; }
   body { background: #fff; color: #000; font-size: 11pt; }
   a { color: #000; text-decoration: underline; }
   main > section { padding: 12pt 0; }
