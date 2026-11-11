@@ -194,19 +194,23 @@ main > section + section { padding-top: 8px; }
 }
 .hero-links svg { opacity: .75; }
 
-.hero-photo { flex-shrink: 0; }
-.hero-photo img,
-.avatar-fallback {
-  width: 168px; height: 168px;
-  border-radius: 50%;
-  object-fit: cover;
+.hero-photo { flex-shrink: 0; width: 232px; }
+/* 完整照片，保持原始比例 */
+.hero-photo img {
+  display: block;
+  width: 100%; height: auto;
+  border-radius: 6px;
+  object-fit: contain;
   border: 1px solid var(--line);
   box-shadow: var(--shadow);
 }
 .avatar-fallback {
   display: grid; place-items: center;
-  font-family: var(--serif); font-size: 4rem; font-weight: 500;
+  width: 100%; aspect-ratio: 3 / 4;
+  border-radius: 6px;
+  font-family: var(--serif); font-size: 4.5rem; font-weight: 500;
   color: var(--accent); background: var(--accent-soft);
+  border: 1px solid var(--line);
   text-transform: uppercase;
 }
 
@@ -506,9 +510,9 @@ footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 28px 0; }
   .nav-links.open { display: flex; }
   .nav-links > a { padding: 12px 0; width: 100%; font-size: .82rem; }
 
-  .hero { flex-direction: column-reverse; gap: 28px; }
-  .hero-photo img, .avatar-fallback { width: 116px; height: 116px; font-size: 2.8rem; }
-  .avatar-fallback { font-size: 2.8rem; }
+  .hero { flex-direction: column-reverse; gap: 24px; }
+  .hero-photo { width: 100%; max-width: 300px; }
+  .avatar-fallback { font-size: 3rem; }
 
   main > section { padding: 40px 0; }
   #about { padding-top: 44px; }

@@ -26,7 +26,7 @@ twitter: ""                     # 只填 handle，不含 @
 cv: ""                          # 例如 /assets/files/cv.pdf
 
 # ---------- 头像 ----------
-avatar: "/assets/img/avatar.jpg"   # 留空则显示姓名首字母
+avatar: "/assets/img/photo.jpg"   # 留空则显示姓名首字母
 
 # ---------- 隐私 ----------
 # true  → 输出 noindex，告诉搜索引擎不要收录本页
